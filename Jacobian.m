@@ -1,5 +1,11 @@
-function J=  Jacobian(Q)
+function J=  Jacobian(q_in)
 
+L1=1;
+L2=1;
+L3=1;
+q1 = q_in(:,1);
+q2 = q_in(:,2);
+q3 = q_in(:,3);
 
 
 % Jq =[ -sin(q1)*(cos(q2 + q3) + cos(q2)), -cos(q1)*(sin(q2 + q3) + sin(q2)), -sin(q2 + q3)*cos(q1)

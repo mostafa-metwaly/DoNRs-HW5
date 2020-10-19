@@ -9,11 +9,12 @@ q1 = q_in(:,1);
 q2 = q_in(:,2);
 q3 = q_in(:,3);
 
-figure;
+ 
 hold on
-view(200,25)
+view([225.95 14.40])
 grid on
-axis equal
+axis([-5 5 -inf inf])
+title('RRR elbow Robot')
 T1=Rz(q1)*Tz(L1);
 plot3(0,0,0,'ro','MarkerSize',5,'LineWidth', 5);
 plot3([0 T1(1,4)],[0 T1(2,4)],[0 T1(3,4)],'-b','LineWidth', 5);

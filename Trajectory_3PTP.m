@@ -83,7 +83,15 @@ acc(i,:) = (2*b(i,3)).*(t<=ta_new)...
     +(2*b(i,8)).*(t>(tf_new-ta_new)).*(t<=tf_new);
 
 end
+figure;
 
+hold on
+for i=1:2:length(q)
+   draw_myrobot([1 1 1],q(:,i)')
+   pause(0.01)
+   cla
+  end   
+ draw_myrobot([1 1 1],q(:,i)')
 
 figure
 subplot(1,3,1)
